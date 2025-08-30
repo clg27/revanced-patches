@@ -70,7 +70,7 @@ val spoofClientPatch = spoofClientPatch(redirectUri = "redditisfun://auth") { cl
             val targetRegister = getInstruction<OneRegisterInstruction>(index).registerA
             replaceInstruction(
                 index,
-                "const-string v$targetRegister, \"https://www.reddit.com/api/v1/authorize.compact\"",
+                "const-string v$targetRegister, \"https://ssl.reddit.com/api/v1/authorize.compact\"",
             )
         }
 
